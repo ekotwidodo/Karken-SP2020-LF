@@ -127,7 +127,14 @@ $(document).ready(function() {
             'art' : art
         };
 
-        console.log(ruta)
+        let agree = $('#agree').is(":checked");
+        if (agree){
+            console.log(ruta);
+            alert(JSON.stringify(ruta));
+        } else {
+            alert('Checklist untuk SETUJU data dikirim.');
+        }
+        
     });
 
 });

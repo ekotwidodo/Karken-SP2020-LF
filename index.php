@@ -16,20 +16,22 @@
 </head>
 
 <body>
-    <h1 class="text-center">Contoh Form Kendali Long Form SP2020</h1>
-    <hr />
-    <div class="container">
+    <div class="container" style="background-color: #E9EFC0;">
         <form id="form-add-lf-sp2020">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <h1 class="text-center">FORM KENDALI <i>LONG FORM</i> SP2020</h1>
+            </div>
+
             <table id="table-ruta-lf-sp2020" class="table table-responsive table-bordered">
                 <tbody>
-                    <tr style="background-color: #DEB6AB;">
+                    <tr style="background-color: #DEB6AB;" class="text-center">
                         <td colspan="3">
                             <b>BLOK I. IDENTIFIKASI RUMAH TANGGA SAMPEL</b>
                         </td>
                     </tr>
                     <tr>
                         <td style="width: 10px;">a.</td>
-                        <td style="width: 750px;">Kabupaten/Kota</td>
+                        <td style="max-width: 375px;">Kabupaten/Kota</td>
                         <td>
                             <select id="b1ra" name="b1ra" class="form-control">
                                 <option value="00">- Pilih Kabupaten/Kota -</option>
@@ -53,7 +55,7 @@
                     </tr>
                     <tr>
                         <td style="width: 10px;">b.</td>
-                        <td style="width: 750px;">Kecamatan</td>
+                        <td style="max-width: 375px;">Kecamatan</td>
                         <td>
                             <select id="b1rb" name="b1rb" class="form-control">
                                 <option value="000">- Pilih Kecamatan -</option>
@@ -63,7 +65,7 @@
                     </tr>
                     <tr>
                         <td style="width: 10px;">c.</td>
-                        <td style="width: 750px;">Desa/Kelurahan</td>
+                        <td style="max-width: 375px;">Desa/Kelurahan</td>
                         <td>
                             <select id="b1rc" name="b1rc" class="form-control">
                                 <option value="000">- Pilih Desa/Kelurahan -</option>
@@ -73,7 +75,7 @@
                     </tr>
                     <tr>
                         <td style="width: 10px;">d.</td>
-                        <td style="width: 750px;">Nomor Blok Sensus (NBS)</td>
+                        <td style="max-width: 375px;">Nomor Blok Sensus (NBS)</td>
                         <td>
                             <select id="b1rd" name="b1rd" class="form-control">
                                 <option value="00">- Pilih NBS -</option>
@@ -83,14 +85,14 @@
                     </tr>
                     <tr>
                         <td style="width: 10px;">e.</td>
-                        <td style="width: 750px;">Nomor Kode Sampel (NKS)</td>
+                        <td style="max-width: 375px;">Nomor Kode Sampel (NKS)</td>
                         <td>
                             <input type="text" id="b1re" name="b1re" class="form-control" value="1300014" />
                         </td>
                     </tr>
                     <tr>
                         <td style="width: 10px;">f.</td>
-                        <td style="width: 750px;">Nomor Urut Rumah Tangga Sampel (NURTS)</td>
+                        <td style="max-width: 375px;">Nomor Urut Rumah Tangga Sampel (NURTS)</td>
                         <td>
                             <select id="b1rf" name="b1rf" class="form-control">
                                 <option value="0">- Pilih NUS -</option>
@@ -114,19 +116,19 @@
                     </tr>
                     <tr>
                         <td style="width: 10px;">g.</td>
-                        <td style="width: 750px;">Nama Kepala Rumah Tangga (KRT)</td>
+                        <td style="max-width: 375px;">Nama Kepala Rumah Tangga (KRT)</td>
                         <td>
                             <input type="text" id="b1rg" name="b1rg" class="form-control" value="EKO TEGUH WIDODO" />
                         </td>
                     </tr>
                     <tr>
                         <td style="width: 10px;">h.</td>
-                        <td style="width: 750px;">Jumlah Anggota Rumah Tangga (n)</td>
+                        <td style="max-width: 375px;">Jumlah Anggota Rumah Tangga (n)</td>
                         <td>
                             <input type="number" id="b1rh" name="b1rh" class="form-control" min="1" step="1" max="20" />
                         </td>
                     </tr>
-                    <tr style="background-color: #DEB6AB;">
+                    <tr style="background-color: #DEB6AB;" class="text-center">
                         <td colspan="3">
                             <b>BLOK II. JUMLAH ANGGOTA RUMAH TANGGA</b>
                         </td>
@@ -148,14 +150,14 @@
                             </table>
                         </td>
                     </tr>
-                    <tr style="background-color: #DEB6AB;">
+                    <tr style="background-color: #DEB6AB;" class="text-center">
                         <td colspan="3">
                             <b>BLOK III. LAINNYA</b>
                         </td>
                     </tr>
                     <tr>
-                        <td style="width: 10px;">3.</td>
-                        <td style="width: 750px;">Apakah Ada Kejadian Migrasi Keluar Internasional di Rumah Tangga Ini? (Lihat P.501)</td>
+                        <td style="width: 10px;">1.</td>
+                        <td style="max-width: 375px;">Apakah Ada Kejadian Migrasi Keluar Internasional di Rumah Tangga Ini? (Lihat P.501)</td>
                         <td>
                             <select id="b3r1" name="b3r1" class="form-control">
                                 <option value="0">- Pilih Jawaban -</option>
@@ -165,8 +167,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="width: 10px;">4.</td>
-                        <td style="width: 750px;">Apakah Ada Kejadian Kematian di Rumah Tangga Ini? (Lihat P.601)</td>
+                        <td style="width: 10px;">2.</td>
+                        <td style="max-width: 375px;">Apakah Ada Kejadian Kematian di Rumah Tangga Ini? (Lihat P.601)</td>
                         <td>
                             <select id="b3r2" name="b3r2" class="form-control">
                                 <option value="0">- Pilih Jawaban -</option>
@@ -176,8 +178,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="width: 10px;">5.</td>
-                        <td style="width: 750px;">Apakah Ada Kejadian Kelahiran di Rumah Tangga Ini? (Lihat P.701)</td>
+                        <td style="width: 10px;">3.</td>
+                        <td style="max-width: 375px;">Apakah Ada Kejadian Kelahiran di Rumah Tangga Ini? (Lihat P.701)</td>
                         <td>
                             <select id="b3r3" name="b3r3" class="form-control">
                                 <option value="0">- Pilih Jawaban -</option>
@@ -186,7 +188,13 @@
                             </select>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="text-center">
+                        <td colspan="3">
+                            <input type="checkbox" name="agree" id="agree" />
+                            <span>Dengan ini saya menyetujui bahwa data di atas adalah BENAR dan SIAP untuk dikirimkan ke SERVER.</span>
+                        </td>
+                    </tr>
+                    <tr class="text-center">
                         <td colspan="3">
                             <button type="submit" class="btn btn-primary">KIRIM KE SERVER</button>
                         </td>
