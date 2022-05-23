@@ -9,3 +9,10 @@ Untuk implementasi jumlah ART di blok II, sesuai dengan jumlah anggota rumah tan
 Semoga bermanfaat!
 
 ![Tampilan](tampilan.png)
+
+
+## UPDATE!
+
+- Sudah berhasil untuk input data baik Ruta dan ART-nya
+- Sudah disediakan SQL untuk struktur tabel
+- Sudah disediakan untuk cara simpan data dari file `simpan.php`

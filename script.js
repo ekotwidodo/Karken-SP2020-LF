@@ -124,13 +124,47 @@ $(document).ready(function() {
             'b3r1': b3r1,
             'b3r2': b3r2,
             'b3r3': b3r3,
-            'art' : art
+            'art' : JSON.stringify(art)
         };
 
         let agree = $('#agree').is(":checked");
         if (agree){
             console.log(ruta);
-            alert(JSON.stringify(ruta));
+
+            $.ajax({
+                type: 'POST',
+                url: 'simpan.php',
+                data: ruta,
+                dataType: 'json',
+                encode: true,
+                success: function(data) {
+                    if (data.status) {
+                        Swal.fire(
+                            {
+                                icon: 'success',
+                                title: 'SIMPAN DATA',
+                                text: data.message
+                            }
+                        ).then(() => {
+                            window.location.href = 'index.php'
+                        });
+                    }
+                },
+                error: function(err) {
+                    if (data.status) {
+                        Swal.fire(
+                            {
+                                icon: 'error',
+                                title: 'SIMPAN DATA',
+                                text: data.message
+                            }
+                        ).then(() => {
+                            window.location.href = 'index.php'
+                        });
+                    }
+                }
+              });
+
         } else {
             alert('Checklist untuk SETUJU data dikirim.');
         }
